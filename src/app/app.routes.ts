@@ -2,7 +2,6 @@ import { Routes } from '@angular/router';
 
 import { ComponentDocumentationComponent } from './components/component-documentation/component-documentation.component';
 import { DirectiveDocumentationComponent } from './directives/directive-documentation/directive-documentation.component';
-import { PipeDocumentationComponent } from './pipes/pipe-documentation/pipe-documentation.component';
 import { ServiceDocumentationComponent } from './services/service-documentation/service-documentation.component';
 
 export const APP_ROUTES: Routes = [
@@ -16,7 +15,8 @@ export const APP_ROUTES: Routes = [
   },
   {
     path: 'pipes',
-    component: PipeDocumentationComponent,
+    loadChildren: () =>
+      import('./pipes/pipes.module').then((m) => m.PipesModule),
   },
   {
     path: 'services',
