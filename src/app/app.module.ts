@@ -13,6 +13,7 @@ import { ComponentDocumentationComponent } from './components/component-document
 import { APP_ROUTES } from './app.routes';
 import { ServiceDocumentationComponent } from './services/service-documentation/service-documentation.component';
 import { DirectiveDocumentationComponent } from './directives/directive-documentation/directive-documentation.component';
+import { LoaderComponent } from './components/loader/loader.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { DirectiveDocumentationComponent } from './directives/directive-document
     ComponentDocumentationComponent,
     ServiceDocumentationComponent,
     DirectiveDocumentationComponent,
+    LoaderComponent,
   ],
   imports: [BrowserModule, RouterModule.forRoot(APP_ROUTES)],
   providers: [],
