@@ -9,6 +9,8 @@ import { StarRatingsComponent } from './star-ratings/star-ratings.component';
 import { SharedModule } from '../shared/shared.module';
 import { COMPONENTS_ROUTES } from './components.routes';
 import { RouterModule } from '@angular/router';
+import { CreditCardInputComponent } from './credit-card-input/credit-card-input.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -17,9 +19,11 @@ import { RouterModule } from '@angular/router';
     ProgressBarComponent,
     StarRatingsComponent,
     LoaderComponent,
+    CreditCardInputComponent,
   ],
   imports: [
     CommonModule,
+    FormsModule,
     SharedModule,
     RouterModule.forChild(COMPONENTS_ROUTES),
   ],
