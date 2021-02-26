@@ -11,6 +11,7 @@ import { COMPONENTS_ROUTES } from './components.routes';
 import { RouterModule } from '@angular/router';
 import { CreditCardInputComponent } from './credit-card-input/credit-card-input.component';
 import { FormsModule } from '@angular/forms';
+import { TwitterPostComponent } from './twitter-post/twitter-post.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { FormsModule } from '@angular/forms';
     StarRatingsComponent,
     LoaderComponent,
     CreditCardInputComponent,
+    TwitterPostComponent,
   ],
   imports: [
     CommonModule,
