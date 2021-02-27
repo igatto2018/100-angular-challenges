@@ -1,6 +1,5 @@
 import { Routes } from '@angular/router';
 
-import { DirectiveDocumentationComponent } from './directives/directive-documentation/directive-documentation.component';
 import { ServiceDocumentationComponent } from './services/service-documentation/service-documentation.component';
 
 export const APP_ROUTES: Routes = [
@@ -11,7 +10,7 @@ export const APP_ROUTES: Routes = [
   },
   {
     path: 'directives',
-    component: DirectiveDocumentationComponent,
+    loadChildren: () => import('./directives/directives.module').then((m) => m.DirectivesModule)
   },
   {
     path: 'pipes',
